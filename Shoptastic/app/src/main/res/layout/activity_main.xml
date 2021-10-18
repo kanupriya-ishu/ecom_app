@@ -33,7 +33,7 @@
             android:orientation="horizontal" >
 
             <RelativeLayout
-                android:id="@+id/women"
+                android:id="@+id/women_fashion"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
