@@ -12,7 +12,8 @@ public class WomenFashionActivity extends AppCompatActivity {
 
     List<Model> modelList; 
     RecyclerView recyclerView; 
-    OrderAdapter mAdapter; 
+    OrderAdapter mAdapter;
+    boolean womenActivity = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +31,12 @@ public class WomenFashionActivity extends AppCompatActivity {
         // adapter
         mAdapter = new OrderAdapter(this, modelList); 
         recyclerView.setAdapter(mAdapter); 
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        womenActivity = true;
+
     }
 }

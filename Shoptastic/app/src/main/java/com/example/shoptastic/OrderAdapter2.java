@@ -11,28 +11,26 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import com.example.shoptastic.WomenFashionActivity;
-
-public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> {
+public class OrderAdapter2 extends RecyclerView.Adapter<OrderAdapter2.ViewHolder> {
 
     List<Model> modelList;
     Context context;
 
-    public OrderAdapter(Context context, List<Model> modelList) {
+    public OrderAdapter2(Context context, List<Model> modelList) {
         this.context = context;
         this.modelList = modelList;
     }
 
     @Override
-    public ViewHolder onCreateViewHolder( ViewGroup parent, int i) {
+    public OrderAdapter2.ViewHolder onCreateViewHolder(ViewGroup parent, int i) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.listitem, parent, false);
-        return new ViewHolder(view);
+        return new OrderAdapter2.ViewHolder(view);
 
     }
 
     @Override
-    public void onBindViewHolder( ViewHolder holder, int position) {
+    public void onBindViewHolder(OrderAdapter2.ViewHolder holder, int position) {
 
         // here we will find the position and start setting the output on our views
 
@@ -79,12 +77,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
             int position = getAdapterPosition();
 
             if (position == 0) {
-                Intent intent = new Intent(context, Women1Activity.class);
-                context.startActivity(intent);
-            }
-
-            if (position == 1) {
-                Intent intent = new Intent(context, Women2Activity.class);
+                Intent intent = new Intent(context, Men1Activity.class);
                 context.startActivity(intent);
             }
 
