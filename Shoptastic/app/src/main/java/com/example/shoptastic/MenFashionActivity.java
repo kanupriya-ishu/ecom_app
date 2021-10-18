@@ -20,7 +20,7 @@ public class MenFashionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_men_fashion);
 
         modelList = new ArrayList<>();
-        modelList.add(new Model("Men's Slim Fit Casual Shirt", getString(R.string.men1), R.drawable.men1));
+        modelList.add(new Model("Casual Shirt", getString(R.string.men1), R.drawable.men1));
         modelList.add(new Model("Slim Fit Jeans", getString(R.string.women2), R.drawable.women2));
 
 

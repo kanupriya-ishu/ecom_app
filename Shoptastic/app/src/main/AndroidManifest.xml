@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Men1Activity"></activity>
+        <activity android:name=".Mobile1Activity"></activity>
+        <activity android:name=".Men1Activity" />
         <activity android:name=".Women1Activity" />
         <activity android:name=".Women2Activity" />
         <activity android:name=".SummaryActivity" />

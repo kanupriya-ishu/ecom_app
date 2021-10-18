@@ -77,7 +77,7 @@ public class OrderAdapter3 extends RecyclerView.Adapter<OrderAdapter3.ViewHolder
             int position = getAdapterPosition();
 
             if (position == 0) {
-                Intent intent = new Intent(context, Men1Activity.class);
+                Intent intent = new Intent(context, Mobile1Activity.class);
                 context.startActivity(intent);
             }
 

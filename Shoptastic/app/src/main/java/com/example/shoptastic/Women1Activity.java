@@ -106,7 +106,7 @@ public class Women1Activity extends AppCompatActivity implements LoaderManager.L
                     // checkBoxes functionality
 
                     int ifCheckBox = calculatePrice(addGift);
-                    itemPrice.setText("$ " + ifCheckBox);
+                    itemPrice.setText("Rs. " + ifCheckBox);
                 }
             }
         });
@@ -153,7 +153,7 @@ public class Women1Activity extends AppCompatActivity implements LoaderManager.L
         int basePrice = 1499;
 
         if (addGift.isChecked()) {
-            // add the cream cost $2
+            // add the cream cost Rs.2
             basePrice = basePrice + 25;
         }
 
@@ -191,14 +191,14 @@ public class Women1Activity extends AppCompatActivity implements LoaderManager.L
             int hasGift = cursor.getColumnIndex(OrderContract.OrderEntry.COLUMN_HASGIFT);
 
 
-            String nameofdrink = cursor.getString(name);
-            String priceofdrink = cursor.getString(price);
-            String quantityofdrink = cursor.getString(quantity);
-            String yeshasCream = cursor.getString(hasGift);
+            String nameofitem = cursor.getString(name);
+            String priceofitem = cursor.getString(price);
+            String quantityofitem = cursor.getString(quantity);
+            String yeshasGift = cursor.getString(hasGift);
 
-            itemName.setText(nameofdrink);
-            itemPrice.setText(priceofdrink);
-            quantitynumber.setText(quantityofdrink);
+            itemName.setText(nameofitem);
+            itemPrice.setText(priceofitem);
+            quantitynumber.setText(quantityofitem);
         }
 
 

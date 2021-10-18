@@ -68,7 +68,7 @@ public class Women2Activity  extends AppCompatActivity implements LoaderManager.
         plusquantity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // coffee price
+                // item price
                 int basePrice = 1899;
                 quantity++;
                 displayQuantity();
@@ -104,7 +104,7 @@ public class Women2Activity  extends AppCompatActivity implements LoaderManager.
                     // checkBoxes functionality
 
                     int ifCheckBox = calculatePrice(addGift);
-                    itemPrice.setText("$ " + ifCheckBox);
+                    itemPrice.setText("Rs. " + ifCheckBox);
                 }
             }
         });
@@ -151,7 +151,7 @@ public class Women2Activity  extends AppCompatActivity implements LoaderManager.
         int basePrice = 1899;
 
         if (addGift.isChecked()) {
-            // add the cream cost $2
+            // add the cream cost Rs.2
             basePrice = basePrice + 25;
         }
 
@@ -189,14 +189,14 @@ public class Women2Activity  extends AppCompatActivity implements LoaderManager.
             int hasGift = cursor.getColumnIndex(OrderContract.OrderEntry.COLUMN_HASGIFT);
 
 
-            String nameofdrink = cursor.getString(name);
-            String priceofdrink = cursor.getString(price);
-            String quantityofdrink = cursor.getString(quantity);
+            String nameofitem = cursor.getString(name);
+            String priceofitem = cursor.getString(price);
+            String quantityofitem = cursor.getString(quantity);
             String yeshasGift = cursor.getString(hasGift);
 
-            itemName.setText(nameofdrink);
-            itemPrice.setText(priceofdrink);
-            quantitynumber.setText(quantityofdrink);
+            itemName.setText(nameofitem);
+            itemPrice.setText(priceofitem);
+            quantitynumber.setText(quantityofitem);
         }
 
 

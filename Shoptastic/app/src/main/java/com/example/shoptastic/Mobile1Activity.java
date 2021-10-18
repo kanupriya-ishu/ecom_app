@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.shoptastic.database.OrderContract;
 
-public class Men1Activity  extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class Mobile1Activity  extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     // first of all we will get the views that are  present in the layout of info
 
@@ -48,15 +48,15 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
         addtoCart = findViewById(R.id.addtocart);
         descriptionInfo = findViewById(R.id.descriptioninfo);
 
-        itemName.setText("Casual Shirt");
-        imageView.setImageResource(R.drawable.men1);
-        itemPrice.setText("Rs. 1499");
+        itemName.setText("Samsung M52");
+        imageView.setImageResource(R.drawable.mobile1);
+        itemPrice.setText("Rs. 24999");
         descriptionInfo.setText(getString(R.string.men1));
 
         addtoCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Men1Activity.this, SummaryActivity.class);
+                Intent intent = new Intent(Mobile1Activity.this, SummaryActivity.class);
                 startActivity(intent);
 
                 // once this button is clicked we want to save our values in the database and send those values
@@ -92,7 +92,7 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
                 int basePrice = 5;
                 // because we dont want the quantity go less than 0
                 if (quantity == 0) {
-                    Toast.makeText(Men1Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Mobile1Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
                 } else {
                     quantity--;
                     displayQuantity();
@@ -148,7 +148,7 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
 
     private int calculatePrice(CheckBox addGift) {
 
-        int basePrice = 1499;
+        int basePrice = 24999;
 
         if (addGift.isChecked()) {
             // add the cream cost Rs.2
@@ -189,14 +189,14 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
             int hasGift = cursor.getColumnIndex(OrderContract.OrderEntry.COLUMN_HASGIFT);
 
 
-            String nameofdrink = cursor.getString(name);
-            String priceofdrink = cursor.getString(price);
-            String quantityofdrink = cursor.getString(quantity);
+            String nameofitem = cursor.getString(name);
+            String priceofitem = cursor.getString(price);
+            String quantityofitem = cursor.getString(quantity);
             String yeshasCream = cursor.getString(hasGift);
 
-            itemName.setText(nameofdrink);
-            itemPrice.setText(priceofdrink);
-            quantitynumber.setText(quantityofdrink);
+            itemName.setText(nameofitem);
+            itemPrice.setText(priceofitem);
+            quantitynumber.setText(quantityofitem);
         }
 
 
