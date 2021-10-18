@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Women1Activity"></activity>
+        <activity android:name=".Women2Activity"></activity>
         <activity android:name=".SummaryActivity"></activity>
         <activity android:name=".BooksActivity" />
         <activity android:name=".SmartphoneActivity" />
