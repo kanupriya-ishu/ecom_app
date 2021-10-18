@@ -13,7 +13,6 @@ public class MenFashionActivity extends AppCompatActivity {
     List<Model> modelList;
     RecyclerView recyclerView;
     OrderAdapter2 mAdapter;
-    boolean menActivity = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +32,4 @@ public class MenFashionActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
     }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-        menActivity = true;
-
-    }
 }
