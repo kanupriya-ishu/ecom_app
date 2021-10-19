@@ -1,35 +1,101 @@
-package com.example.shoptastic.database;
+package com.example.shoptastic;
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
-public class OrderHelper extends SQLiteOpenHelper {
-
-
-    public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "shoptastic.db";
-
-    public OrderHelper(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
-    }
-
+public class MainActivity extends AppCompatActivity {
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        String SQL_TABLE = "CREATE TABLE " + OrderContract.OrderEntry.TABLE_NAME + " ("
-                + OrderContract.OrderEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                +  OrderContract.OrderEntry.COLUMN_NAME + " TEXT NOT NULL, "
-                +  OrderContract.OrderEntry.COLUMN_QUANTITY + " TEXT NOT NULL, "
-                +  OrderContract.OrderEntry.COLUMN_PRICE + " TEXT NOT NULL, "
-                +  OrderContract.OrderEntry.COLUMN_HASGIFT + " TEXT NOT NULL); ";
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        db.execSQL(SQL_TABLE);
+        RelativeLayout menFashion = findViewById(R.id.men_fashion);
+
+        menFashion.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, MenFashionActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
+        RelativeLayout womenFashion = findViewById(R.id.women_fashion);
+
+        womenFashion.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, WomenFashionActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
+        RelativeLayout smartphones = findViewById(R.id.mobile);
+
+        smartphones.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, SmartphoneActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
+        RelativeLayout books = findViewById(R.id.books);
+
+        books.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, BooksActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
+        Button login = findViewById(R.id.nav_login);
+        login.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, SignUpActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
+        Button cart = findViewById(R.id.nav_cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent attractionsIntent = new Intent(MainActivity.this, SummaryActivity.class);
+
+                // Start the new activity
+                startActivity(attractionsIntent);
+            }
+        });
+
     }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    }
-
 }
-

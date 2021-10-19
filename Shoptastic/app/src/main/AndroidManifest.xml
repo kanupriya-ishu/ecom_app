@@ -27,6 +27,8 @@
         <activity android:name=".SmartphoneActivity" />
         <activity android:name=".WomenFashionActivity" />
         <activity android:name=".MenFashionActivity" />
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
