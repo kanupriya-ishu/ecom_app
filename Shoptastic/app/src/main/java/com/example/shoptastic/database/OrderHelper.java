@@ -1,101 +1,68 @@
-package com.example.shoptastic;
+package com.example.shoptastic.database;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
-public class MainActivity extends AppCompatActivity {
+public class OrderHelper extends SQLiteOpenHelper {
+
+
+    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "shoptastic.db";
+
+    public OrderHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onCreate(SQLiteDatabase db) {
+        String SQL_TABLE = "CREATE TABLE " + OrderContract.OrderEntry.TABLE_NAME + " ("
+                + OrderContract.OrderEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                +  OrderContract.OrderEntry.COLUMN_NAME + " TEXT NOT NULL, "
+                +  OrderContract.OrderEntry.COLUMN_QUANTITY + " TEXT NOT NULL, "
+                +  OrderContract.OrderEntry.COLUMN_PRICE + " TEXT NOT NULL, "
+                +  OrderContract.OrderEntry.COLUMN_HASGIFT + " TEXT NOT NULL); ";
 
-        RelativeLayout menFashion = findViewById(R.id.men_fashion);
+        db.execSQL(SQL_TABLE);
+        db.execSQL("create Table users(username TEXT primary key, password TEXT);");
+    }
 
-        menFashion.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, MenFashionActivity.class);
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("drop Table if exists users");
+    }
 
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
-        RelativeLayout womenFashion = findViewById(R.id.women_fashion);
-
-        womenFashion.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, WomenFashionActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
-        RelativeLayout smartphones = findViewById(R.id.mobile);
-
-        smartphones.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, SmartphoneActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
-        RelativeLayout books = findViewById(R.id.books);
-
-        books.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, BooksActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
-        Button login = findViewById(R.id.nav_login);
-        login.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, SignUpActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
-        Button cart = findViewById(R.id.nav_cart);
-        cart.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, SummaryActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
+    public Boolean insertData(String username, String password){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues= new ContentValues();
+        contentValues.put("username", username);
+        contentValues.put("password", password);
+        long result = MyDB.insert("users", null, contentValues);
+        if(result==-1) return false;
+        else
+            return true;
 
     }
+
+    public Boolean checkusername(String username){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[] {username});
+        if(cursor.getCount()>0)
+            return true;
+        else
+            return false;
+    }
+
+    public Boolean checkusernamepassword(String username, String password){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[] {username, password});
+        if(cursor.getCount()>0)
+            return true;
+        else
+            return false;
+    }
+
 }
