@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import com.example.shoptastic.WomenFashionActivity;
-
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> {
 
     List<Model> modelList;
@@ -85,6 +83,31 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
 
             if (position == 1) {
                 Intent intent = new Intent(context, Women2Activity.class);
+                context.startActivity(intent);
+            }
+
+            if (position == 2) {
+                Intent intent = new Intent(context, Women3Activity.class);
+                context.startActivity(intent);
+            }
+
+            if (position == 3) {
+                Intent intent = new Intent(context, Women4Activity.class);
+                context.startActivity(intent);
+            }
+
+            if (position == 4) {
+                Intent intent = new Intent(context, Women5Activity.class);
+                context.startActivity(intent);
+            }
+
+            if (position == 5) {
+                Intent intent = new Intent(context, Women6Activity.class);
+                context.startActivity(intent);
+            }
+
+            if (position == 6) {
+                Intent intent = new Intent(context, Women7Activity.class);
                 context.startActivity(intent);
             }
 

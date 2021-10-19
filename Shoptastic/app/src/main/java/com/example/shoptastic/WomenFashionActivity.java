@@ -22,6 +22,12 @@ public class WomenFashionActivity extends AppCompatActivity {
         modelList = new ArrayList<>(); 
         modelList.add(new Model("Anarkali Dress", getString(R.string.women1), R.drawable.women1));
         modelList.add(new Model("Slim Fit Jeans", getString(R.string.women2), R.drawable.women2));
+        modelList.add(new Model("Waterfall Shrugs", getString(R.string.women3), R.drawable.women3));
+        modelList.add(new Model("Formal Blazer", getString(R.string.women4), R.drawable.women4));
+        modelList.add(new Model("Sweatshirt", getString(R.string.women5), R.drawable.women5));
+        modelList.add(new Model("Midi Skirt", getString(R.string.women6), R.drawable.women6));
+        modelList.add(new Model("Printed Top", getString(R.string.women7), R.drawable.women7));
+
 
 
         // recyclerview
