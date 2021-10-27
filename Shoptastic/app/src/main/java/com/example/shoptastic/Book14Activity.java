@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.shoptastic.database.OrderContract;
 
-public class Book1Activity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class Book14Activity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     // first of all we will get the views that are  present in the layout of info
 
@@ -48,15 +48,15 @@ public class Book1Activity extends AppCompatActivity implements LoaderManager.Lo
         addtoCart = findViewById(R.id.addtocart);
         descriptionInfo = findViewById(R.id.descriptioninfo);
 
-        itemName.setText(getString(R.string.bookt1));
-        imageView.setImageResource(R.drawable.book1);
+        itemName.setText(getString(R.string.bookt14));
+        imageView.setImageResource(R.drawable.book14);
         itemPrice.setText("Rs. 299");
-        descriptionInfo.setText(getString(R.string.bookd1));
+        descriptionInfo.setText(getString(R.string.bookd14));
 
         addtoCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Book1Activity.this, SummaryActivity.class);
+                Intent intent = new Intent(Book14Activity.this, SummaryActivity.class);
                 startActivity(intent);
 
                 // once this button is clicked we want to save our values in the database and send those values
@@ -92,7 +92,7 @@ public class Book1Activity extends AppCompatActivity implements LoaderManager.Lo
                 int basePrice = 299;
                 // because we dont want the quantity go less than 0
                 if (quantity == 0) {
-                    Toast.makeText(Book1Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Book14Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
                 } else {
                     quantity--;
                     displayQuantity();

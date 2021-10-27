@@ -5,8 +5,6 @@
     <string name="men1">Inkast Casual Shirt; Care Instructions: Machine Wash; Fit Type: Slim Fit Soft and Breathable; 100% Cotton Fabric; Garment dyed solid color shirt</string>
     <string name="mob1">" Roll over image to zoom in Samsung Galaxy M52 5G (ICY Blue, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display"</string>
     <string name="mob2">Nature Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery</string>
-    <string name="book1">This story, dazzling in its powerful simplicity and inspiring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried in the Pyramids. Along the way he meets a Gypsy woman, a man who calls himself</string>
-    <string name="book2">‘Eleven minutes’ is the masterpiece of Brazilian bestselling author Paulo Coelho. This novel is based on a fictional account of a woman named Maria who lives in Rio, but moves to Geneva.</string>
     <string name="women3">ESPRESSO Women\'s 100% Viscose Waterfall Shrugs with Button Foldable Sleeve; Care Instructions: Machine Wash; Fit Type: Regular</string>
     <string name="women4">VERO MODA Women\'s Single Breasted Blazer Slim; Care Instructions: Dry Clean Only; Color Name: Port Royale</string>
     <string name="women5">Care Instructions: Machine Wash; Fit Type: Regular; 60% Cotton and 40% polyester; Hooded SweatshirtSolid</string>
@@ -21,4 +19,43 @@
     <string name="mob4">(Diamond Flare, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers | 64MP+2MP+2MP Rear Camera | 16MP Selfie Camera</string>
     <string name="mob5">(Oxygen Blue, 4GB RAM + 128GB Storage) - with No Cost EMI/Additional Exchange Offers; 4 GB RAM | 128 GB ROM | Expandable Upto 256 GB</string>
     <string name="mob6">Steel Blue, 6GB RAM, 128GB Storage| 16.94 cm (6.67 inch) Full HD+ Display | 48MP + 8MP + 2MP + 2MP | 20MP Front Camera</string>
+    <string name="bookt1">Self confidence</string>
+    <string name="bookt2">Believe in yourself</string>
+    <string name="bookt3">Deep work</string>
+    <string name="bookt4">You can</string>
+    <string name="bookt5">The perfect murder</string>
+    <string name="bookt6">One arranged murder</string>
+    <string name="bookt7">Two Indian girls</string>
+    <string name="bookt8">State of terror</string>
+    <string name="bookt9">Murder in a minute</string>
+    <string name="bookt10">Stone cold</string>
+    <string name="bookt11">The little princess</string>
+    <string name="bookt12">Mind reader</string>
+    <string name="bookt13">The Great Gatsby</string>
+    <string name="bookt14">The lost world</string>
+    <string name="bookt15">Interstellar</string>
+    <string name="bookt16">Tenet</string>
+    <string name="bookt17">Cold skin</string>
+    <string name="bookt18">Mad Max</string>
+
+    <string name="bookd1">Where does self-confidence come from? How does it work? Why are some people more confident than others? On the surface, these seem like simple questions – but answers can feel hard to come by when we need them most.</string>
+    <string name="bookd2">A excellent book by one of the pioneers of human potential movement, Joseph Murphy, shows how to use your imagination to penetrate into the depths of reality to reveal the secrets of nature. </string>
+    <string name="bookd3">DEEP WORK accomplishes two considerable tasks: One is putting out a wealth of concrete practices for the ambitious, without relying on gauzy clichés. The second is that Mr. Newport resists the corporate groupthink of constant connectivity without seeming like a curmudgeon</string>
+    <string name="bookd4">One of the best empowering self-help manual ever written! A powerful guide filled with quotes imparting wisdom of a man whose teachings have inspired millions — Napoleon Hill &amp; penned by bestselling author George Matthew Adams to promote personal growth and well-being.</string>
+    <string name="bookd5">In that dim corner of the cafe was planned the perfect murder. Paul had long since realized that the affair was not so easy of accomplishment as he had so airily suggested</string>
+    <string name="bookd6">Keshav has set up an investigation agency with his best friend, Saurabh. Can the two amateur detectives successfully solve another murder case that affects them personally? And where will it leave their friendship?</string>
+    <string name="bookd7">Khushbu and Amrita are best friends forever. Khushbu is a simple girl, while Amrita is an upwardly mobile corporate marketing whiz-kid from Mumbai. A battle for truth … and survival.</string>
+    <string name="bookd8">After a tumultuous period in American politics, a new administration has just been sworn in. Secretary of State, Ellen Adams, is determined to do her duty for her country. But she is about to face a horrifying international threat . . .</string>
+    <string name="bookd9">When a young woman is found lifeless in a pool of her own blood, everyone is convinced that it is her college sweetheart who murdered her. </string>
+    <string name="bookd10">Stone Cold is a Carnegie Medal-winning thriller by Robert Swindells. It is one of The Originals from Penguin - iconic, outspoken, first.</string>
+    <string name="bookd11">“I pretend I am a princess, so that I can try and behave like one.” When the kind and imaginative seven-year-old Sara Crewe reaches Miss Minchin’s Select Seminary for Young Ladies with her papa, she doesn’t quite like it.</string>
+    <string name="bookd12">Mind Reader: Unlocking the Power of Your Mind to Get What You Want Do you believe it\'s possible for someone to read your mind? Lior Suchard can. He can read your innermost thoughts, and knows what you are going to say before you say it—before you even know you\'re going to say it! </string>
+    <string name="bookd13">It\'s the Roaring Twenties and New York City is the place to be. Everything can be purchased, everyone can be bought. But, can you make money erase your past?</string>
+    <string name="bookd14">It is a 1990 science fiction novel written by Michael Crichton.[2] A cautionary tale about genetic engineering, it presents the collapse of an amusement park showcasing genetically re-created dinosaurs</string>
+    <string name="bookd15">This is the chronicle of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.</string>
+    <string name="bookd16">Tenet is a global thriller whose action stretches across time zones, and stars Robert Pattinson, Elizabeth Debicki and John David Washington.</string>
+    <string name="bookd17">On the edge of the Antarctic Circle, in the years after World War One, a steamship approaches a desolate island. On board is a young man on his way to assume the post of weather observer, to live in solitude for a year at the end of the earth.</string>
+    <string name="bookd18">In the brutal and lawless Wasteland, witness the rise of the veteran hero turned tyrannical warlord known as Immortan Joe, along with the story of one of his War Boys, the indomitable Nux.</string>
+
+
 </resources>

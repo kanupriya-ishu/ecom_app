@@ -12,7 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Mobile6Activity"></activity>
+        <activity android:name=".BookC4Activity"></activity>
+        <activity android:name=".BookC3Activity" />
+        <activity android:name=".BookC2Activity" />
+        <activity android:name=".BookC1Activity" />
+        <activity android:name=".Book18Activity" />
+        <activity android:name=".Book17Activity" />
+        <activity android:name=".Book16Activity" />
+        <activity android:name=".Book15Activity" />
+        <activity android:name=".Book14Activity" />
+        <activity android:name=".Book13Activity" />
+        <activity android:name=".Book12Activity" />
+        <activity android:name=".Book11Activity" />
+        <activity android:name=".Book10Activity" />
+        <activity android:name=".Book9Activity" />
+        <activity android:name=".Book8Activity" />
+        <activity android:name=".Book7Activity" />
+        <activity android:name=".Book6Activity" />
+        <activity android:name=".Book5Activity" />
+        <activity android:name=".Book4Activity" />
+        <activity android:name=".Book3Activity" />
+        <activity android:name=".Book2Activity" />
+        <activity android:name=".database.Book2Activity" />
+        <activity android:name=".Book1Activity" />
+        <activity android:name=".Mobile6Activity" />
         <activity android:name=".Mobile5Activity" />
         <activity android:name=".Mobile4Activity" />
         <activity android:name=".Mobile3Activity" />
@@ -26,7 +49,6 @@
         <activity android:name=".Women5Activity" />
         <activity android:name=".Women4Activity" />
         <activity android:name=".Women3Activity" />
-        <activity android:name=".Book1Activity" />
         <activity android:name=".Mobile1Activity" />
         <activity android:name=".Men1Activity" />
         <activity android:name=".Women1Activity" />
@@ -38,13 +60,13 @@
         <activity android:name=".MenFashionActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <provider
             android:name=".database.OrderProvider"
