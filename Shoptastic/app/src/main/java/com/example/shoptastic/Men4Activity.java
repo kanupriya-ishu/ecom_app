@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.shoptastic.database.OrderContract;
 
-public class Men1Activity  extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class Men4Activity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     // first of all we will get the views that are  present in the layout of info
 
@@ -48,15 +48,15 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
         addtoCart = findViewById(R.id.addtocart);
         descriptionInfo = findViewById(R.id.descriptioninfo);
 
-        itemName.setText("Casual Shirt");
-        imageView.setImageResource(R.drawable.men1);
-        itemPrice.setText("Rs. 1499");
-        descriptionInfo.setText(getString(R.string.men1));
+        itemName.setText("Men's Polo");
+        imageView.setImageResource(R.drawable.men4);
+        itemPrice.setText("Rs. 799");
+        descriptionInfo.setText(getString(R.string.men4));
 
         addtoCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Men1Activity.this, SummaryActivity.class);
+                Intent intent = new Intent(Men4Activity.this, SummaryActivity.class);
                 startActivity(intent);
 
                 // once this button is clicked we want to save our values in the database and send those values
@@ -69,7 +69,7 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
             @Override
             public void onClick(View v) {
                 // coffee price
-                int basePrice = 1499;
+                int basePrice = 799;
                 quantity++;
                 displayQuantity();
                 int coffePrice = basePrice * quantity;
@@ -92,7 +92,7 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
                 int basePrice = 5;
                 // because we dont want the quantity go less than 0
                 if (quantity == 0) {
-                    Toast.makeText(Men1Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Men4Activity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
                 } else {
                     quantity--;
                     displayQuantity();
@@ -148,7 +148,7 @@ public class Men1Activity  extends AppCompatActivity implements LoaderManager.Lo
 
     private int calculatePrice(CheckBox addGift) {
 
-        int basePrice = 1499;
+        int basePrice = 799;
 
         if (addGift.isChecked()) {
             // add the cream cost Rs.2
