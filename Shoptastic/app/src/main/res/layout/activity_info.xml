@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/subquantity"
                 android:id="@+id/gift"
-                android:text="Add gift options: Rs.20"/>
+                android:text="Add gift options: Rs.25"/>
 
             <TextView
                 android:layout_width="wrap_content"
