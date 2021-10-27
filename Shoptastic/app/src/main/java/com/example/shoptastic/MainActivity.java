@@ -71,19 +71,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button login = findViewById(R.id.nav_login);
-        login.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent attractionsIntent = new Intent(MainActivity.this, SignUpActivity.class);
-
-                // Start the new activity
-                startActivity(attractionsIntent);
-            }
-        });
-
         Button cart = findViewById(R.id.nav_cart);
         cart.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.

@@ -6,23 +6,18 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#3a31de">
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:text="Login"
+            android:text="Go to Cart"
             android:layout_margin="5dp"
-            android:id="@+id/nav_login"></Button>
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="Login"
-            android:layout_margin="5dp"
-            android:id="@+id/nav_cart"></Button>
+            android:background="#262096"
+            android:id="@+id/nav_cart"
+            android:textColor="#ffffff"></Button>
 
     </LinearLayout>
 
@@ -67,7 +62,7 @@
                 <ImageView
                     android:id="@+id/image1"
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/women_fashion"
@@ -79,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textColor="#ffffff"
                     android:layout_below="@id/image1"
                     android:text="Women Fashion"
@@ -100,7 +95,7 @@
                 <ImageView
                     android:id="@+id/image2"
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/men_fashion"
@@ -112,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textColor="#ffffff"
                     android:layout_below="@id/image2"
                     android:text="Men Fashion"
@@ -157,7 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textColor="#ffffff"
                     android:layout_below="@id/image3"
                     android:text="Smartphones"
@@ -190,7 +185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textColor="#ffffff"
                     android:layout_below="@id/image4"
                     android:text="Books"
