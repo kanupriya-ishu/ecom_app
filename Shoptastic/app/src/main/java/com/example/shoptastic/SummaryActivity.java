@@ -2,6 +2,7 @@ package com.example.shoptastic;
 
 import android.app.LoaderManager;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.shoptastic.database.OrderContract;
 
@@ -28,6 +30,9 @@ public class SummaryActivity extends AppCompatActivity implements LoaderManager.
             @Override
             public void onClick(View v) {
                 int deletethedata = getContentResolver().delete(OrderContract.OrderEntry.CONTENT_URI, null, null);
+                Toast.makeText(SummaryActivity.this, "Order Successfully Placed", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
 
